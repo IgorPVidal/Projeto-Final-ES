@@ -1,6 +1,6 @@
-# Projeto-Final-ES
+# Card Build MTG
 
-Esse projeto representa um sistema web para uma loja de cartas de Magic: The Gathering responsável por realizar controle de estoque, 
+Esse projeto representa um sistema web para uma loja de cartas fanmade de Magic: The Gathering responsável por realizar controle de estoque, 
 cadastrar produtos e clientes e registrar compras.
 
 Tecnologias utilizadas: 
