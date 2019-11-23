@@ -19,6 +19,8 @@ Linguagens utilizadas:
 
 - CSS3
 
+- JavaScript ECMAScript 2018
+
 - SQL2016
 
 - PHP 7.3.9
