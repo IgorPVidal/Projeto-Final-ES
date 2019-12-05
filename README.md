@@ -45,4 +45,6 @@ Regras de uso do GIT:
 
 - Usar :construction: para indicar que os arquivos do commit ainda está em construção
 
+- Usar :clipboard: para testes
+
 - O número da esquerda em uma release só é mudado quando uma etapa do projeto foi terminada
