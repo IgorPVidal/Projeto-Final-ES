@@ -1,0 +1,39 @@
+.menu{
+	text-align: center;
+	margin-top: 12vh;
+	margin-bottom: 6vh;
+	width: 30em;
+	margin-left: auto;
+	margin-right:auto;
+	border: solid rgba(88, 88, 82, 0.8) 5px;
+	border-radius: 10px;
+	background-color: rgba(227, 232, 233, 0.575);
+}
+.item{
+	margin-bottom: 2em;
+}
+.first-item{
+	margin-top: 2em;
+}
+.btn-primary{
+	width: 10em;
+}
+.inputFile{
+	margin-left: auto;
+	margin-right: auto;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.perfilImg{
+	max-width: 10em;
+	max-height: 10em;
+}
+.cardImg{
+	max-width: 15em;
+	max-height: 20em;
+	border:1px solid #000000;
+}
