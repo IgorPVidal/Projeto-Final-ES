@@ -48,3 +48,19 @@ Regras de uso do GIT:
 - Usar :clipboard: para testes
 
 - O número da esquerda em uma release só é mudado quando uma etapa do projeto foi terminada
+
+Boas Práticas de Codificação
+
+-	O nome de toda variável ou método deve atender ao estilo Camel Case: A primeira letra da primeira palavra é minúscula e a primeira letra de cada palavra subsequente é maiúscula.
+
+-	Todo método deve ser comentado com uma explicação geral de seu uso.
+
+-	Utilizar nomes intuitivos para variáveis e métodos.
+
+-	Identar o código de modo a deixar claro o escopo de cada linha de código.
+
+-	Declare uma variável por linha para facilitar a escrita de comentários.
+
+-	Solicite ao usuário os valores a serem digitados com mensagens adequadas.
+
+-	Mensagens de erro devem ser de fácil entendimento, descrevendo corretamente a causa do erro.
