@@ -49,7 +49,7 @@ Regras de uso do GIT:
 
 - O número da esquerda em uma release só é mudado quando uma etapa do projeto foi terminada
 
-Boas Práticas de Codificação
+Boas Práticas de Codificação:
 
 -	O nome de toda variável ou método deve atender ao estilo Camel Case: A primeira letra da primeira palavra é minúscula e a primeira letra de cada palavra subsequente é maiúscula.
 
