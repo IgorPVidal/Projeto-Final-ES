@@ -4,7 +4,7 @@ Esse projeto representa um sistema web para uma loja de cartas fanmade de Magic:
 cadastrar produtos e clientes e registrar compras.
 
 Tecnologias utilizadas: 
-
+ 
 IDE's:
 
 - Visual Studio Code 1.38
