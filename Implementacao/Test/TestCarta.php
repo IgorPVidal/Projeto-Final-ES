@@ -1,7 +1,7 @@
 <?php
     
-	require_once('Prototipo com php\Model\Carta.php');
-	require_once('Prototipo com php\Persistence\Connection.php');
+	require_once('Implementacao\Model\Carta.php');
+	require_once('Implementacao\Persistence\Connection.php');
 
 
 	class TestCarta extends PHPUnit\Framework\TestCase{
