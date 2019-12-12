@@ -26,8 +26,8 @@
 			<div class="item first-item"><h1>Consultar Carta</h1></div>
 			<div class="item">Nome:<br><input type="text" id="readCardNome"></div>
 			<div class="item">
-				<button type="button" class="btn btn-success" onclick="readCard(document.getElementById('readCardNome').value)">Consultar</button>
-				<button type="button" class="btn btn-success" onclick="readCard('')">Listar Todas</button>
+				<button type="button" class="btn btn-success" onclick="readCard(document.getElementById('readCardNome').value, false)">Consultar</button>
+				<button type="button" class="btn btn-success" onclick="readCard('', true)">Listar Todas</button>
 			</div>
 		</div>
 		<!-- div que disponibiliza a lista de cartas resultantes da consulta -->

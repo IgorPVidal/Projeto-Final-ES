@@ -9,13 +9,11 @@
 	
 	$cartaDAO = new CartaDAO();
     
-    
+    //consulta o id da carta para conferir se existe
     $resultado = $cartaDAO->consultarPorId($idCarta, $conexao);
 
-	
-	
+	//testa se a consulta resultou em alguma coisa
 	if($resultado->num_rows > 0){
-		
 		$resultado = $cartaDAO->excluirPorId($idCarta, $conexao);
 		if($resultado === TRUE){
 			echo "Carta excluída com sucesso!\nVoltando para o menu";

@@ -3,7 +3,7 @@
 	include_once '..\Model\Carta.php';
 	include_once '..\Persistence\CartaDAO.php';
 	
-	//variáveis
+	
 	$idCarta = $_POST['updateCardIdCarta'];
     $nome = $_POST['updateCardNome']; 
     $descricao = $_POST['updateCardDescricao'];

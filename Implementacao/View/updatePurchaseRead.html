@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../javascript/index.js"></script>
+	<title>Protótipo Loja MTG</title>
+</head>
+<body>
+	<div>
+		<div class="home container-fluid">
+			<div class="col-sm-6 left">
+					<button type="button" class="btn btn-primary" onclick="returnHome()">Home</button>
+			</div>
+			<div class="col-sm-6 right">
+				<button type="button" class="btn btn-primary" onclick="readUser()">Perfil</button>
+			</div>
+		</div>
+		<!-- formulario de consulta de compra -->
+		<div class="menu" id="divBuscaCompra">
+			<div class="item first-item"><h1>Consultar Compra</h1></div>
+			<div class="item">ID:<br><input type="text" id="readPurchaseId"></div>
+			<div class="item">
+				<button type="button" class="btn btn-success" onclick="readPurchase(document.getElementById('readPurchaseId').value, false)">Consultar</button>
+				<button type="button" class="btn btn-success" onclick="readPurchase('', true)">Listar Todas</button>
+			</div>
+		</div>
+		<!-- div que disponibiliza a lista de compras resultantes da consulta -->
+		<div class="menu" id="divListaCompra" hidden></div>
+		<!-- div que disponibiliza os dados da compra selecionada -->
+		<div class="menu" id="divShowCompra" hidden>
+			<div class="item first-item"><h1 id="viewCompraId">Id Compra: </h1></div>
+			<div class="item" id="viewCompraNomeCarta">Nome Carta: </div>
+			<div class="item" id="viewCompraQuantidade">Quantidade: </div>
+			<div class="item" id="viewCompraPreco">Preço: R$</div>
+			<div class="item" id="viewCompraNomeDestinatario">Nome Destinatário: </div>
+			<div class="item" id="viewCompraEndereco">Endereço de Entrega: </div>
+			<div class="item" id="viewCompraTelefone">Telefone de Contato: </div>
+			<div class="item">
+				<button type="button" class="btn btn-success" onclick="showUpdatePurchase()">Alterar</button>
+			</div>
+		</div>
+		<!-- div que disponibiliza a opção de alterar/deletar -->
+		<div class="menu" id="divUpdateDeleteCompra" hidden>
+			<div class="item first-item"><h1>Atualizar Compra</h1></div>
+			<!-- o id da compra fica em um input oculto para ser usada para buscar a compra a ser alterada -->
+			<div class="item" hidden><input type="number" id="updateCompraId"></div>
+			<div class="item">Nome Carta:<br><input type="text" id="updateCompraNomeCarta"></div>
+			<div class="item">Quantidade:<br><input type="text" id="updateCompraQuantidade"></div>
+			<div class="item">Nome Destinatário:<br><input type="text" id="updateCompraNomeDestinatario"></div>
+			<div class="item">Endereço de Entrega:<br><input type="text" id="updateCompraEndereco"></div>
+			<div class="item">Telefone de Contato:<br><input type="text" id="updateCompraTelefone"></div>
+			<div class="item">
+				<button type="button" class="btn btn-success" onclick="updatePurchase()">Atualizar</button>
+			</div>
+			<div class="item">
+				<button type="button" class="btn btn-danger" onclick="deletePurchase()">Delete</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

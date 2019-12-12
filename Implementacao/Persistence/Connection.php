@@ -1,7 +1,6 @@
 <?php
 	
 	class Connection{
-		//PROVAVELMENTE PRECISA PEGAR ALGUMAS DESSAS COISAS POR PARÂMETRO
 		private $servername = "localhost";
 		private $username = "root";
 		private $password = "";
@@ -10,6 +9,7 @@
 		
 		function __construct(){}
 		
+		//estabelece conexão com o banco de dados
 		function getConnection(){
 			//testa se uma conexão ainda não foi estabelecida
 			if($this->conn == null){

@@ -1,15 +1,15 @@
 <?php
 
     include_once '..\Persistence\Connection.php';
-	include_once '..\Persistence\ClienteDAO.php';
+	include_once '..\Persistence\CartaDAO.php';
     
-    $idCliente = $_POST['IdCliente'];
+    $idCarta = $_POST['IdCarta'];
 
     $conexao = new Connection();
     $conexao = $conexao->getConnection();
     
-    $clienteDAO = new ClienteDAO();
-    $resultado = $clienteDAO->consultarPorId($idCliente, $conexao);
+    $cartaDAO = new CartaDAO();
+    $resultado = $cartaDAO->consultarPorId($idCarta, $conexao);
 
     if($resultado->num_rows > 0){
         $linha = $resultado->fetch_assoc();
